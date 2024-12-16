@@ -1,6 +1,6 @@
 import Test from "./Test";
 import "./app.scss";
-import Hero from "./components/Hero/Hero";
+import Hero from "./components/hero/Hero"; 
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 
