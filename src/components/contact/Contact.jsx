@@ -3,6 +3,7 @@ import './contact.scss'
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+
 const variants = {
   initial: {
     y: 500,
@@ -31,10 +32,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_0iz44dk",
+        "template_r5ez947",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "OcVpdd4Eqdu0_zpaY"
       )
       .then(
         (result) => {
@@ -106,8 +107,8 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
+          <input type="text" required placeholder="Name" name="from_name"/>
+          <input type="email" required placeholder="Email" name="from_email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
