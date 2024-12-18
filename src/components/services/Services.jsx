@@ -19,6 +19,21 @@ const variants = {
   },
 };
 
+const redirectToGitHubUrlShortner = () => {
+  window.open('https://github.com/Dpgaur1509/Url-Shortner', '_blank');
+};
+const redirectToGitHubBlogify = () => {
+  window.open('https://github.com/Dpgaur1509/Blog-website', '_blank');
+};
+const redirectToGitHubTextextractor = () => {
+  window.open('https://github.com/Dpgaur1509/Text-extractor', '_blank');
+};
+const redirectToGitHubWeatherapp = () => {
+  window.open('https://github.com/Dpgaur1509/Weather-App', '_blank');
+};
+
+
+
 const Services = () => {
   const ref = useRef();
 
@@ -64,7 +79,7 @@ const Services = () => {
           <p>
           Explore my innovative URL shortener project powered by Node.js and Express.js. With a seamless blend of efficiency and simplicity, this project showcases my expertise in backend development. Witness the power of concise, user-friendly URLs in action, demonstrating my commitment to crafting solutions that enhance user experience and functionality.
           </p>
-          <button>Go</button>
+          <button onClick={redirectToGitHubUrlShortner}>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -74,27 +89,27 @@ const Services = () => {
           <p>
           Dive into my weather map project, skillfully crafted with React.js and OpenWeatherMap API. Experience real-time weather updates presented in an intuitive interface. This project reflects my proficiency in front-end development, delivering dynamic and visually engaging solutions.
           </p>
-          <button>Go</button>
+          <button onClick={redirectToGitHubWeatherapp}>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>News App</h2>
+          <h2>ImageTextify</h2>
           <p>
-          Dive into my dynamic News App project, crafted with React.js and fueled by the Open News API. Witness my proficiency in frontend development as I deliver a sleek, responsive application, providing users with real-time, curated news experiences.
+          Explore my Text Extractor project, a seamless blend of React.js, Node.js, Express.js, Tesseract OCR library, and Multer for static storage. This application effortlessly extracts text from images, showcasing my proficiency in building efficient solutions for seamless data extraction in a user-friendly interface.
           </p>
-          <button>Go</button>
+          <button onClick={redirectToGitHubTextextractor}>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>To-Do List App</h2>
+          <h2>Blogify - A Full-Stack Blog Platform 🚀</h2>
           <p>
-          Discover my To-Do List project, a seamless blend of EJS, Node.js, Express.js, and MongoDB. Experience the power of organized task management with a user-friendly interface, showcasing my skills in full-stack development and data persistence.
+          Blogify is a full-stack blog platform featuring secure user authentication with JWT for data security. Built with React.js and Bootstrap for a responsive frontend, users can write, read, update, delete posts, and comment on others’ content. The backend is powered by Node.js and Express.js, providing efficient server management, while MongoDB ensures scalable and reliable data storage. This project demonstrates a well-rounded full-stack solution with a focus on user experience and data integrity.
           </p>
-          <button>Go</button>
+          <button onClick={redirectToGitHubBlogify}>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>

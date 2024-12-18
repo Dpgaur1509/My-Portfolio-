@@ -2,6 +2,10 @@ import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
+const redirectToGitHub = () => {
+  window.open('https://github.com/Dpgaur1509', '_blank');
+};
+
 const items = [
   {
     id: 1,
@@ -17,9 +21,9 @@ const items = [
   },
   {
     id: 3,
-    title: "Text-extractor",
-    img: "https://media.istockphoto.com/id/1448124439/vector/web-development-programming-and-code-testing-ui-concept-with-laptop-displaying-futuristic.jpg?s=1024x1024&w=is&k=20&c=tJoG56Y1oHTWbRsPvfFnNYkZkWU5ohSQr30Lq2DX9vM=",
-    desc: "Explore my Text Extractor project, a seamless blend of React.js, Node.js, Express.js, Tesseract OCR library, and Multer for static storage. This application effortlessly extracts text from images, showcasing my proficiency in building efficient solutions for seamless data extraction in a user-friendly interface.",
+    title: "Music-School Website",
+    img:"https://images.template.net/wp-content/uploads/2017/03/18073506/Music-School-Website-Logo.jpg",
+    desc: "I created a music school website using Next.js and Tailwind CSS, enhanced with advanced animations using Framer Motion. The frontend features dynamic shadow effects, animated cards, and running text, providing a next-level user experience. The website includes a user-friendly contact section, allowing students to easily connect with the organization, and an animated teacher section showcasing instrument-specific cards for each teacher. This combination of sleek design, interactivity, and functionality delivers an engaging and seamless experience for both students and users, ensuring a modern and professional web solution.",
   },
   {
     id: 4,
@@ -48,7 +52,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button onClick={redirectToGitHub}>See Code</button>
           </motion.div>
         </div>
       </div>
